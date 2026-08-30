@@ -1,0 +1,24 @@
+# /fraud-detection-platform/.gitignore
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environments & Secrets
+.env
+venv/
+env/
+.venv/
+
+# ML Data & Local Models (we don't commit big CSVs or model weights)
+ml/data/raw/*.csv
+ml/data/processed/*.csv
+ml/models/*.pkl
+# We will generate model_metadata.json dynamically, so we ignore it
+ml/models/model_metadata.json
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+.DS_Store

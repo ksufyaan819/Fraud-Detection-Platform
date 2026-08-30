@@ -1,0 +1,13 @@
+# /fraud-detection-platform/backend/requirements.txt
+
+fastapi==0.109.2
+uvicorn[standard]==0.27.0.post1
+sqlalchemy==2.0.25
+psycopg2-binary==2.9.9
+pydantic==2.6.1
+pydantic-settings==2.1.0
+xgboost==2.0.3
+scikit-learn==1.4.0
+pandas==2.2.0
+numpy==1.26.3
+shap==0.44.1
