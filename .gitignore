@@ -11,14 +11,16 @@ venv/
 env/
 .venv/
 
-# ML Data & Local Models (we don't commit big CSVs or model weights)
-ml/data/raw/*.csv
-ml/data/processed/*.csv
-ml/models/*.pkl
-# We will generate model_metadata.json dynamically, so we ignore it
+# ML Data & Local Models (Blocks all datasets and model weights globally)
+*.csv
+*.pkl
+*.h5
+*.pt
 ml/models/model_metadata.json
 
 # Frontend
 frontend/node_modules/
 frontend/dist/
+
+# OS generated files
 .DS_Store
